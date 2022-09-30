@@ -1,6 +1,7 @@
 # DSA-4-All
 
-- This repository contains solutions to DSA practice problems in all languages (C++, Java or Python).
+- This repository contains solutions to DSA practice problems of various platforms (like LeetCode, gfg-pratice, HackerRank, InterviewBit, etc.) in all languages (C++, Java or Python).
+- Only add solutions to the questions which are on any coding platform, with the link to that question.
 - If you are interested in adding more topics, feel free to contribute.
 - If you feel this helpful please press the star.
 - If you are a hacktoberfest contributor, you are welcome to contribute.
