@@ -38,7 +38,8 @@ Following are the steps to guide you. You can proceed in 2 ways: either by local
           
           for example:
           
-          ![image](https://user-images.githubusercontent.com/59230661/193325247-6b1b6a3c-bb41-4b80-be4f-af873fff9270.png)
+          <img alt="image" src="https://user-images.githubusercontent.com/59230661/193325739-4794e7d0-488b-4f0c-868d-3a51737c4026.png">
+
           
   
 * Step 5: Add the file and then commit changes.
