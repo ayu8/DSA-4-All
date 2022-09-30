@@ -8,7 +8,7 @@ int searchInSorted(int a[], int n, int x) {
             return 1; 
         }
             
-        else if(a[mid] > x) {
+        else if (a[mid] > x) {
             end = mid-1; 
         }
           
