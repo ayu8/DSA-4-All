@@ -28,8 +28,8 @@ Following are the steps to guide you:
 ```
     git clone https://github.com/ayu8/DSA-4-ALL.git
 ```
-* Step 3: Go to your desired topic, using ```cd``` and create a new file with name in the snake_case convention with proper file extension.
-          for example: '''search_in_a_2d_matrix.py''' or '''search_in_a_2d_matrix.cpp', etc.
+* Step 3: Go to your desired topic, using ```cd/DSA-4-ALL/<topic-name>``` and create a new file with name in the snake_case convention with proper file extension.
+          for example: ```search_in_a_2d_matrix.py'``` or ```search_in_a_2d_matrix.cpp```, etc.
 
 
 ## 🤔Need help?
