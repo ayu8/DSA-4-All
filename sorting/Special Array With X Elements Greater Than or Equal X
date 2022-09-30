@@ -1,0 +1,30 @@
+class Solution {
+public:
+    int specialArray(vector<int>& nums) {
+        sort(nums.begin(),nums.end());
+        int start=0,n=nums.size();
+        int end=n-1;
+        vector<int>s(n,0);
+        int j=0;
+        for(int i=0;i<n;i++)
+        {
+            while(j<n and nums[j]<(i+1))j++;
+            s[i]=n-j;
+        }
+        //for(int i=0;i<n;i++)cout<<s[i]<<" ";
+        int ans=-1;
+        while(start<=end)
+        {
+            int mid=end-(end-start)/2;
+            if(mid+1==s[mid])return mid+1;
+            else if(s[mid]>mid+1)
+                start=mid+1;
+            else
+                end=mid-1;
+        }
+        return -1;
+    }
+};
+
+// question link:
+// https://leetcode.com/problems/special-array-with-x-elements-greater-than-or-equal-x/
