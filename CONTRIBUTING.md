@@ -1,17 +1,19 @@
-## 🎇Contributing Guidelines
+## 📝Contribution Guidelines
 
----
 
+Welcome to [DSA-4-ALL](https://github.com/ayu8/DSA-4-ALL).
 First of all thanks for taking time out to contribute :smiley: :partying_face:
+
 
 ## 💻Before Contributing
 
-Welcome to [DSA-4-ALL](https://github.com/ayu8/DSA-4-ALL). Before sending your pull requests, make sure that you **read the guidelines** properly.
+
+Before sending your pull requests, make sure that you **read the guidelines** properly.
 If you still have any doubt about the contributing guide, please feel free to reach out.
+
 
 ## 🙌Contribution
 
-Your contributions can be adding a solution to a **new practice problem** of the **existing domain (SQL)** or you can come up with the solution of **any other domain (For example, C++, Java, Python, etc.)**. Please read this section if you are contributing your work.
 
 You can provide solutions to any problem of DSA, in any programming language of your choice (like C++, Java, Python, etc).
 You **also need to provide the link of the question**, from any coding platform (like LeetCode, GeeksForGeeks-Practice, InterviewBit, etc.)
@@ -21,8 +23,13 @@ You **also need to provide the link of the question**, from any coding platform 
 
 Following are the steps to guide you:
 
-* Step 1: Star and Fork the repo Go to your Git terminal and clone it on your machine.
-* Step 2: Add an upstream link to the main branch in your cloned repo
+* Step 1: Star and Fork the repo.
+* Step 2: Go to your Git terminal and clone it on your machine.
+```
+    git clone https://github.com/ayu8/DSA-4-ALL.git
+```
+* Step 3: Go to your desired topic, using ```cd``` and create a new file with name in the snake_case convention with proper file extension.
+          for example: '''search_in_a_2d_matrix.py''' or '''search_in_a_2d_matrix.cpp', etc.
 
 
 ## 🤔Need help?
