@@ -31,23 +31,8 @@ Following are the steps to guide you. You can proceed in 2 ways: either by local
 
   <img width="928" alt="image" src="https://user-images.githubusercontent.com/59230661/193323743-98f2ceb6-025f-4a88-b990-7c96dfb8b05b.png">
 
-* Step 4: Name of the file should be in the snake_case convention with proper file extension, for example: ```search_in_a_2d_matrix.py``` or ```search_in_a_2d_matrix.cpp```, etc.
-* <img alt="image" src="https://user-images.githubusercontent.com/59230661/193325739-4794e7d0-488b-4f0c-868d-3a51737c4026.png">
-* 
-
-
-
-![image](https://user-images.githubusercontent.com/59230661/193325957-c8cd94d2-2abf-4c60-bb9d-4027b0b2c453.png)
-
-          
-          Also, mention the question link (in comments)
-          
-          for example:
-          
-          
-
-          
-  
+* Step 4: Name of the file should be in the snake_case convention with proper file extension, for example: ```search_in_a_2d_matrix.py``` or ```search_in_a_2d_matrix.cpp```, etc. Also, mention the question link (in comments), for example:
+ <img alt="image" src="https://user-images.githubusercontent.com/59230661/193325739-4794e7d0-488b-4f0c-868d-3a51737c4026.png">  
 * Step 5: Add the file and then commit changes.
 * Step 6: Come to your forked DSA-4-ALL repo. You will see a msg like, *this repo is 1 commit ahead of ayu8:main*. Click on this and in the next page, click on ```Create pull request```
 *
