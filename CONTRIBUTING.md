@@ -23,6 +23,8 @@ You **also need to provide the link of the question**, from any coding platform 
 - No need to add driver-code for the problem or the main() function.
 - File should contain the solution code as well as the link to that question (as comment in the code).
 - File should be created inside appropriate folder (topic).
+- The name of the file should follow snake_case convention.
+
 
 
 ### 🔖Steps to Contribute
