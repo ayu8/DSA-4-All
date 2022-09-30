@@ -27,13 +27,23 @@ Following are the steps to guide you. You can proceed in 2 ways: either by local
 
 * Step 1: Star and Fork the repo. Now you can proceed in 2 ways: either by local machine (using git) or using github only.
 * Step 2: Open the forked repo (can find in your repositories) and open the folder of your desired topic.
-* Step 3: Find ```Add File``` dropdown-option and click on ```Upload Files``` (if you already have file saved in your local machine) or ```Create new file```
+* Step 3: Find ```Add File``` dropdown-option and click on ```Create new file``` or ```Upload Files``` (if you already have file saved in your local machine).
 
   <img width="928" alt="image" src="https://user-images.githubusercontent.com/59230661/193323743-98f2ceb6-025f-4a88-b990-7c96dfb8b05b.png">
 
 * Step 4: Name of the file should be in the snake_case convention with proper file extension.
           for example: ```search_in_a_2d_matrix.py'``` or ```search_in_a_2d_matrix.cpp```, etc.
-* Step 5: 
+          
+          Also, mention the question link (in comments)
+          
+          for example:
+          
+          ![image](https://user-images.githubusercontent.com/59230661/193325247-6b1b6a3c-bb41-4b80-be4f-af873fff9270.png)
+          
+  
+* Step 5: Add the file and then commit changes.
+* Step 6: Come to your forked DSA-4-ALL repo. You will see a msg like, *this repo is 1 commit ahead of ayu8:main*. Click on this and in the next page, click on ```Create pull request```
+*
 
 ***Local Machine***
 
