@@ -21,7 +21,8 @@ You **also need to provide the link of the question**, from any coding platform 
 **Note**:
 - Only add solutions to the questions which are on any coding platform, with the link to that question.
 - No need to add driver-code for the problem or the main() function.
-- Only add the solution to the question with the link to that question (as comment in the code).
+- File should contain the solution code as well as the link to that question (as comment in the code).
+- File should be created inside appropriate folder (topic).
 
 
 ### 🔖Steps to Contribute
