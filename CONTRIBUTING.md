@@ -37,7 +37,7 @@ Following are the steps to guide you. You can proceed in 2 ways: either by local
  
 * Step 5: Add the file and then commit changes.
 * Step 6: Come to your forked DSA-4-ALL repo. You will see a msg like, *this repo is 1 commit ahead of ayu8:main*. Click on this and in the next page, click on ```Create pull request```
-*
+
 
 ***Local Machine***
 
