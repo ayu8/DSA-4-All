@@ -1,4 +1,4 @@
-// my first backtracking question
+// https://leetcode.com/problems/subsets/
 #include<iostream>
 #include<vector>
 #include<algorithm>
