@@ -18,6 +18,12 @@ If you still have any doubt about the contributing guide, please feel free to re
 You can provide solutions to any problem of DSA, in any programming language of your choice (like C++, Java, Python, etc).
 You **also need to provide the link of the question**, from any coding platform (like LeetCode, GeeksForGeeks-Practice, InterviewBit, etc.)
 
+**Note**:
+- Only add solutions to the questions which are on any coding platform, with the link to that question.
+- No need to add driver-code for the problem or the main() function.
+- File should contain the solution code as well as the link to that question (as comment in the code).
+- File should be created inside appropriate folder (topic).
+
 
 ### 🔖Steps to Contribute
 
