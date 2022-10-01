@@ -67,10 +67,3 @@ public:
         return head;
     }
 };
-
-int main() 
-{
-    
-
-    return 0;
-}

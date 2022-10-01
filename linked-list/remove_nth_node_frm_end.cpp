@@ -42,13 +42,3 @@ public:
         return head;
     }
 };
-
-int main()
-{
-    Solution s;
-    ListNode *head;
-    s.removeNthFromEnd(head, 3);
-
-    return 0;
-}
- 

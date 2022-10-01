@@ -30,18 +30,3 @@ public:
         return v;
     }
 };
-
-int main() 
-{
-    Solution s;
-    vector <int> nums = {1, 2, 3};
-    vector<vector<int>> v = s.subsets(nums);
-    for (int i=0; i<v.size(); i++) {
-        for (int j=0; j<v[i].size(); j++) {
-            cout << v[i][j] << " ";
-        }
-        cout << endl;
-    }
-
-    return 0;
-}

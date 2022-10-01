@@ -1,5 +1,4 @@
 // https://leetcode.com/problems/binary-tree-inorder-traversal/
-// use your own main class
 #include<bits/stdc++.h>
 #include<iostream>
 #include<vector>
@@ -32,10 +31,3 @@ private:
         inorder(root->right, ans);
     }
 };
-
-int main() 
-{
-    
-
-    return 0;
-}

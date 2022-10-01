@@ -1,5 +1,4 @@
 // https://leetcode.com/problems/binary-tree-postorder-traversal/
-//use your own main function
 #include<bits/stdc++.h>
 #include<iostream>
 #include<vector>
@@ -32,10 +31,3 @@ private:
         ans.push_back(root->val);
     }
 };
-
-int main() 
-{
-    
-
-    return 0;
-}

@@ -30,13 +30,3 @@ public:
         return nums[n-k];
     }
 };
-
-int main() 
-{
-    Solution s;
-    vector <int> nums = {3,2,3,1,2,4,5,5,6};
-    int k = 4;
-    cout << s.findKthLargest(nums, k) << endl;   
-
-    return 0;
-}

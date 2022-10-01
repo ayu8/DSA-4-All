@@ -23,12 +23,3 @@ public:
         return -1;
     }
 };
-
-int main() 
-{
-    Solution s;
-    string str = "loveleetcode";
-    cout << s.firstUniqChar(str) << endl;
-
-    return 0;
-}

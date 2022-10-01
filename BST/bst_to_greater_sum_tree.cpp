@@ -1,5 +1,4 @@
 // https://leetcode.com/problems/convert-bst-to-greater-tree/
-// include your own main function
 #include<iostream>
 #include<vector>
 #include<algorithm>
@@ -59,10 +58,3 @@ public:
         return root;
     }
 };
-
-int main() 
-{
-    
-
-    return 0;
-}
