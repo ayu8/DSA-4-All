@@ -1,3 +1,8 @@
+// Contributor : Nikita
+// Follow me : https://github.com/geekygirl8
+
+// Link: https://leetcode.com/problems/longest-valid-parentheses/
+
 class Solution {
 public:
     int longestValidParentheses(string s) {
