@@ -1,0 +1,93 @@
+#include<iostream>
+using namespace std;
+struct node
+{
+           int data;
+           node *next;
+           node *prev;
+};
+node *insert_end(node *start,int x)
+{
+           node *temp=new node;
+           temp->data=x;
+           temp->next=NULL;
+           temp->prev=NULL;
+           if(start==NULL)
+                      return temp;
+           node *ptr=start;
+           while(ptr->next!=NULL)
+           {
+                      ptr=ptr->next;
+           }
+           ptr->next=temp;
+           temp->prev=ptr;
+           return start;
+}
+void display(node *start)
+{
+           node *temp=start;
+           while(temp->next!=NULL)
+           {
+                      cout<<temp->data<<" ";
+                      temp=temp->next;
+           }
+           cout<<temp->data;
+}
+node *delete_front(node *start)
+{
+           node *temp=start;
+           start->next->prev=NULL;
+           start=start->next;
+           free(temp);
+           return start;
+}
+node *delete_last(node *start)
+{
+           node *ptr1;
+           node *ptr2=start;
+           while(ptr2->next!=NULL)
+           {
+                      ptr1=ptr2;
+                      ptr2=ptr2->next;
+           }
+           ptr1->next=NULL;
+           free(ptr2);
+           return(start);
+}
+node *delete_random(node *start,int pos)
+{
+           node *ptr1;
+           node *ptr2=start;
+           for(int i=1;i<pos;i++)
+           {
+                      ptr1=ptr2;
+                      ptr2=ptr2->next;
+           }
+           ptr1->next=ptr2->next;
+           ptr2->next->prev=ptr1;
+           return start;
+}
+int main()
+{
+           node *sample=NULL;
+           sample=insert_end(sample,10);
+           sample=insert_end(sample,20);
+           sample=insert_end(sample,30);
+           sample=insert_end(sample,40);
+           sample=insert_end(sample,50);
+           sample=insert_end(sample,60);
+           sample=insert_end(sample,70);
+           sample=insert_end(sample,80);
+           cout<<"List:";
+           display(sample);
+           sample=delete_front(sample);
+           cout<<"\nList:";
+           display(sample);
+           sample=delete_last(sample);
+           cout<<"\nList:";
+           display(sample);
+           cout<<"\nList:";
+           sample=delete_random(sample,2);
+           display(sample);
+           return 0;
+}
