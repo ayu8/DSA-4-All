@@ -9,8 +9,8 @@ class Solution:
         while l + 1 < r:
             mid = (l + r) // 2
             if sum(ceil(i / mid) for i in piles) > H:
-                beg = mid
+                l = mid
             else:
-                end = mid
+                r = mid
                 
-        return end
+        return r
