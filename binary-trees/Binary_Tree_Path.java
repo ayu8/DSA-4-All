@@ -34,4 +34,4 @@ class Solution {
 
 
 
-//Leetcode link :- https://leetcode.com/problems/path-sum/submissions/815321361/
+//Leetcode link :- https://leetcode.com/problems/path-sum/
