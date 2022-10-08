@@ -100,5 +100,3 @@ int main(void)
 
 	return (0);
 }
-
-// This code is contributed by rathbhupendra
