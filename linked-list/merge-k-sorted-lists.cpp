@@ -62,30 +62,94 @@ So the total complexity is:
 = logK*KN
 */
 
+#include <bits/stdc++.h>
+using namespace std;
+  
+struct Node {
+    int data;
+    struct Node* next;
+};
 
-
-
-ListNode *mergeTwoLists(ListNode* l1, ListNode* l2) {
-        if (NULL == l1) return l2;
-        else if (NULL == l2) return l1;
-        if (l1->val <= l2->val) {
-            l1->next = mergeTwoLists(l1->next, l2);
-            return l1;
-        }
-        else {
-            l2->next = mergeTwoLists(l1, l2->next);
-            return l2;
-        }
+struct Node* newNode(int data)
+{
+    // allocate node
+    struct Node* new_node = new Node();
+  
+    // put in the data
+    new_node->data = data;
+    new_node->next = NULL;
+  
+    return new_node;
+}
+    struct compare 
+    {
+    bool operator()(
+        struct Node* a, struct Node* b)
+    {
+        return a->data > b->data;
     }
-    ListNode *mergeKLists(vector<ListNode *> &lists) {
-        if (lists.empty()) return NULL;
-        int len = lists.size();
-        while (len > 1) {
-            for (int i = 0; i < len / 2; ++i) {
-                lists[i] = mergeTwoLists(lists[i], lists[len - 1 - i]);
-            }
-            len = (len + 1) / 2;
-        }
+};
+  
+// function to merge k sorted linked lists
+struct Node* mergeKSortedLists(struct Node* arr[], int k)
+{
+    priority_queue<Node*, vector<Node*>, compare> p;
+  
+    for (int i = 0; i < k; i++)
+        if (arr[i] != NULL)
+            p.push(arr[i]);
+            if (p.empty())
+        return NULL;
+    
+      struct Node *dummy = newNode(0);
+      struct Node *last = dummy;
+    
+    while (!p.empty()) 
+    {
+  
+        struct Node* curr = p.top();
+        p.pop();
+         last->next = curr;
+          last = last->next;  
         
-        return lists.front();
+        if (curr->next != NULL)
+            // push the next node of top node in 'p'
+            p.push(curr->next);
     }
+      return dummy->next;
+}
+  
+void printList(struct Node* head)
+{
+    while (head != NULL) {
+        cout << head->data << " ";
+        head = head->next;
+    }
+}
+  
+int main()
+{
+    int k = 3; // Number of linked lists
+    int n = 3; // Number of elements
+     Node* arr[k];
+  
+    arr[0] = newNode(1);
+    arr[0]->next = newNode(4);
+    arr[0]->next->next = newNode(5);
+  
+    arr[1] = newNode(1);
+    arr[1]->next = newNode(3);
+    arr[1]->next->next = newNode(4);
+  
+    arr[2] = newNode(2);
+    arr[2]->next = newNode(6);
+  
+    // merge the k sorted lists
+    struct Node* head = mergeKSortedLists(arr, k);
+  
+    // print the merged list
+    printList(head);
+  
+    return 0;
+}
+
