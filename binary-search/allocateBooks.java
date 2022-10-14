@@ -18,7 +18,7 @@ public class Solution {
         }
         
         while(low <= high){
-            int mid = (low + high) >> 1;
+            int mid = low + ((high - low) >> 1);
             
             if(isPossible(A, mid, B)){
                 res = mid;
