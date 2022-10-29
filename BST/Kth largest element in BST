@@ -1,0 +1,20 @@
+//https://practice.geeksforgeeks.org/problems/kth-largest-element-in-bst/1
+class Solution
+{
+    public:
+    void solve(Node*root,int k,vector<int>&ans){
+        if(root==NULL)
+        return ;
+        solve(root->left,k,ans);
+        ans.push_back(root->data);
+        solve(root->right,k,ans);
+    }
+    int kthLargest(Node *root, int K)
+    {
+        
+        //Your code here
+        vector<int>ans;
+        solve(root,K,ans);
+        return ans[ans.size()-K];
+    }
+};
