@@ -1,0 +1,39 @@
+#include <bits/stdc++.h>
+using namespace std;
+string reverseWords(string s) {
+ string v,k;int j=0,p=0,i=0,b=0;
+
+
+
+  for(int i=0;i<s.size();i++){
+     if(s[i]==' ' && s[i+1]!=' ' || s[i]>='a' && s[i]<='z'  || s[i]>='A' && s[i]<='Z'|| s[i]>='0' && s[i]<='9')
+    
+v.push_back(s[i]);
+  } s=v;
+ for(int i=0;i<s.size();i++){
+   if(s[i]>='a' && s[i]<='z'  || s[i]>='A' && s[i]<='Z'||s[i]>='0' && s[i]<='9')
+   {p=i;
+   break;}
+  }
+  for(int i=0;i<s.size();i++){
+   if(s[i]>='a' && s[i]<='z'  || s[i]>='A' && s[i]<='Z'|| s[i]>='0' && s[i]<='9')
+   b=i;
+  }
+ for(int i=p;i<=b;i++){
+
+   k.push_back(s[i]);
+  }
+ reverse(k.begin(),k.end());
+for(int i=0;i<k.size();i++){
+    if(k[i]==' '  )
+     {
+        reverse(k.begin()+j,k.begin()+i);
+        j=i+1; }}
+reverse(k.begin()+j,k.end());
+
+        return k;}
+        int main(){
+string f;
+getline(cin,f);
+cout<<reverseWord(f);
+return 0;}
